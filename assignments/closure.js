@@ -4,6 +4,18 @@
 // that manipulates variables defined in the outer scope.
 // The outer scope can be a parent function, or the top level of the script.
 
+function refrigerator() {
+  function mainshelves () {
+    const shelf1leftovers = ['mealprep', 'pizza', 'chinese_food'];
+    const shelf2sandwiches = ['delimeat', 'delicheese', 'bread', 'lettuce'];
+    const drawer1veggies = ['tomato', 'carrot', 'onion'];
+  }
+  const drawer2meat = ['pork', 'beef'];
+  function freezer (){
+    const fshelf1 = ['frozen_burritos'];
+    const fshelf2 = ['frozen_peas', 'ice'];
+  }
+}
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
