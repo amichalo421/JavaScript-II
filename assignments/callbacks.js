@@ -4,6 +4,8 @@
 
 const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
 
+...
+
 /* 
 
   // GIVEN THIS PROBLEM:
