@@ -21,7 +21,7 @@ function refrigerator() {
 
 
 // ==== Challenge 2: Implement a "counter maker" function ====
-const counterMaker = () => {
+
   // IMPLEMENTATION OF counterMaker:
   // 1- Declare a `count` variable with a value of 0. We will be mutating it, so declare it using `let`!
   // 2- Declare a function `counter`. It should increment and return `count`.
@@ -38,7 +38,7 @@ const counterMaker = () => {
 // will refuse to go over the limit, and start back at 1.
 
 // ==== Challenge 4: Create a counter function with an object that can increment and decrement ====
-const counterFactory = () => {
+
   // Return an object that has two methods called `increment` and `decrement`.
   // `increment` should increment a counter variable in closure scope and return it.
   // `decrement` should decrement the counter variable and return it.

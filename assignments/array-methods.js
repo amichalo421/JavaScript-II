@@ -58,18 +58,13 @@ const runners = [
 // ==== Challenge 1: Use .forEach() ====
 // The event director needs both the first and last names of each runner for their running bibs. 
 //Combine both the first and last names and populate a new array called `fullNames`. This array will contain just strings.
-const fullnames = runners.map(eachRunner => {
-  return `${eachRunner.first_name}` + " " + `${eachRunner.last_name}`;
-});
+
 
 
 // ==== Challenge 2: Use .map() ====
 // The event director needs to have all the runners' first names in uppercase because the director BECAME DRUNK WITH POWER. 
 //Populate an array called `firstNamesAllCaps`. This array will contain just strings.
-let firstNamesAllCaps = runners.map(eachRunner => {
-  return eachRunner.first_name.toUpperCase();
-});
-console.log(firstNamesAllCaps);
+
 
 
 // ==== Challenge 3: Use .filter() ====
@@ -83,10 +78,7 @@ console.log(firstNamesAllCaps);
 
 // ==== Challenge 4: Use .reduce() ====
 // The donations need to be tallied up and reported for tax purposes. Add up all the donations and save the total into a ticketPriceTotal variable.
-let ticketPriceTotal = runners.reduce((donationTotal, eachrunner) => {
-  return donationTotal + eachRunner.donation;
-  }, 0);
-console.log(ticketPriceTotal);
+
 
 
 // ==== Challenge 5: Be Creative ====
