@@ -4,7 +4,11 @@
 // that manipulates variables defined in the outer scope.
 // The outer scope can be a parent function, or the top level of the script.
 
+let shoes = ['Adidas', 'Puma', 'Nike', 'Reebok', 'Asics']
 
+const startsWithA = shoes.filter((shoe) => shoe.startsWith("A"));
+
+console.log(startsWithA);
 
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
