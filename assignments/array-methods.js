@@ -224,11 +224,54 @@ const reducedDonations = runners.reduce((total, runner) => {
 // // ==== Challenge 5: Be Creative ====
 // // Now that you have used .forEach(), .map(), .filter(), and .reduce().  I want you to think of potential problems you could solve given the data set and the 5k fun run theme.  Try to create and then solve 3 unique problems using one or many of the array methods listed above.
 
-// // Problem 1
+// // Problem 1: Multiply the variables in an array by 2.
 
-// // Problem 2
+=
+      var array1 = [2, 4, 11, 32];
+
+      // pass a function to map
+      const map1 = array1.map(x => x * 2);
+
+      console.log(map1);
+      // expected output: Array [4, 8, 22, 64]
+
+
+// // Problem 2: 
+
+
+      let shoes = ['Adidas', 'Puma', 'Nike', 'Reebok', 'Asics']
+
+      const result = words.filter(word => word.length > 6);
+
+      console.log(result);
+      // expected output: Array ["Adidas", "Reebok"]
+
+
 
 // // Problem 3
+
+      const array1 = [1, 2, 3, 4, 5];
+      const reducer = (accumulator, currentValue) => accumulator + currentValue;
+
+      // 1 + 2 + 3 + 4 + 5
+      console.log(array1.reduce(reducer));
+      // expected output: 15
+
+      // 5 + 1 + 2 + 3 + 4 + 5
+      console.log(array1.reduce(reducer, 5));
+      // expected output: 20
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

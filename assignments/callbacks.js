@@ -251,7 +251,8 @@ function removeDuplicates(array, cb) {	function removeDuplicates(array, cb) {
     // compares values
     if (sorted[i + 1] === sorted[i]) {
       // remove duplicate from sorted array
-      results.pop(sorted[i]);
+      // results.pop(sorted[i]); 
+      sorted.splice(i, 1);
     }
   }
   // Pass the duplicate free array to the callback function.	  // Pass the duplicate free array to the callback function.
