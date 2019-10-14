@@ -1,14 +1,38 @@
-// ==== Challenge 1: Write your own closure ====
-// Write a closure of your own creation.
-// Keep it simple! Remember a closure is just a function
-// that manipulates variables defined in the outer scope.
-// The outer scope can be a parent function, or the top level of the script.
+// // ==== Challenge 1: Write your own closure ====
+// // Write a closure of your own creation.
+// // Keep it simple! Remember a closure is just a function
+// // that manipulates variables defined in the outer scope.
+// // The outer scope can be a parent function, or the top level of the script.
 
-let shoes = ['Adidas', 'Puma', 'Nike', 'Reebok', 'Asics']
+// Closure 1: //??? is this really a closure since it's an arrow function
+// let shoes = ['Adidas', 'Puma', 'Nike', 'Reebok', 'Asics']
 
-const startsWithA = shoes.filter((shoe) => shoe.startsWith("A"));
+// const startsWithA = shoes.filter((shoe) => shoe.startsWith("A"));
 
-console.log(startsWithA);
+// console.log(startsWithA);
+
+// Closure 2:
+// function login() {
+//   let username = 'Andre';
+//   function displayUser() {
+//     console.log("Thanks for logging in " + username + "!" + " would you like to see your daily reports!");
+//   }
+//   return displayUser();
+// }
+// login();
+
+// Closure 3:
+function uselesspush() {      ///Can we do a review of examples of all the kind of functions that are annonymous, or declarations, or expressions.
+  let pushbox = [];
+  let name = 'Penguin';
+  function nameToArray() {
+    pushbox.push(name);
+  }
+  console.log(pushbox(0));
+  return (`Why's is there a ${this.name} in the array`);
+}
+uselesspush();
+// Can you help me edit this function.
 
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */

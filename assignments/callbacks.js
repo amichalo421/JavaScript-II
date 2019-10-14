@@ -239,7 +239,31 @@ function contains(item, list, cb) {
 // }
 
 
+const duplicates = ['Pencil', 'Notebook', 'yo-yo', 'Gum', 'Pencil'];
 
+
+function removeDuplicates(array, cb) {	function removeDuplicates(array, cb) {
+  let results = []
+  let sorted = array.slice().sort();
+
+  // removeDuplicates removes all duplicate values from the given array.	  // removeDuplicates removes all duplicate values from the given array.
+  for (let i = 0; i < sorted.length - 1; i++) {
+    // compares values
+    if (sorted[i + 1] === sorted[i]) {
+      // remove duplicate from sorted array
+      results.pop(sorted[i]);
+    }
+  }
+  // Pass the duplicate free array to the callback function.	  // Pass the duplicate free array to the callback function.
+  // Do not mutate the original array.	  cb(sorted);
+
+}	}
+removeDuplicates(duplicates, (array) => {
+  console.log("No more duplicates: " + array)
+});
+
+// Check mutation
+console.log(duplicates)
 
 
 
@@ -357,3 +381,4 @@ function contains(item, list, cb) {
 //   // Pass the duplicate free array to the callback function.
 //   // Do not mutate the original array.
 // // }
+
